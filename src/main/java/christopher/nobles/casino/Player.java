@@ -30,5 +30,5 @@ public class Player {
         this.name = name;
         return this.name;
     }
-    
+
 }
