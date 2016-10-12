@@ -40,6 +40,7 @@ public class Display {
     }
 
     public static void renderGamesMenu(){
+        timeStamp();
         print("\nWe have quite a few ways for you to lose money here. Pick one." +
                 " \n|     [[GAMES MENU]]" +
                 " \n| [1] - Slots(Basic)" +

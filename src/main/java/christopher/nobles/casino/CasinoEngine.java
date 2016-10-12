@@ -11,6 +11,8 @@ public class CasinoEngine {
 
     MenuLogic menuLogic = new MenuLogic();
 
+    static void exit(){}
+
     public void startCasino(){
          Display.timeStamp();
          Display.renderWelcome();

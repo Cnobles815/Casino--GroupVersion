@@ -30,10 +30,10 @@ public class MenuLogic {
     public void gamesMenuLogic(int choice) {
         switch (choice) {
             case 1:
-                blackJack.runGame();
+                slots.runGame();
                 break;
             case 2:
-                slots.runGame();
+                blackJack.runGame();
                 break;
             case 3:
                 break;
