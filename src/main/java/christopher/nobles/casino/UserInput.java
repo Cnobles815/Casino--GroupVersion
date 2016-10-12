@@ -14,17 +14,17 @@ public class UserInput {
 
 
 
-    public String getUserInput(String input){
+    public String getUserInputStr(){
         strIn = userInput.next();
         return strIn;
     }
 
-    public int getUserInput(int input){
+    public int getUserInputInt(){
         intIn = userInput.nextInt();
         return intIn;
     }
 
-    public double getUserInput(double input){
+    public double getUserInputDbl(){
         doubleIn = userInput.nextDouble();
         return doubleIn;
     }

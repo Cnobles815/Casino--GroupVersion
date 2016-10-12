@@ -6,7 +6,7 @@ public class Display {
     static Date date = new Date();
 
     static public void welcome(){
-        print("        \n\nWelcome to to Nobles Casino. \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
+        print("        \n\nWelcome to to Nobles Casino! \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
     }
 
     static public void mainMenu(){
