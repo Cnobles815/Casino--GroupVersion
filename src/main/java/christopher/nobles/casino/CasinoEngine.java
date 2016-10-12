@@ -5,7 +5,10 @@ package christopher.nobles.casino;
  */
 public class CasinoEngine {
 
-    static public void startCasino(){
+     public void startCasino(){
+         Display.timeStamp();
+        Display.welcome();
+         Display.mainMenu();
 
     }
 

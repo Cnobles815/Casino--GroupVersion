@@ -15,4 +15,6 @@ public class SlotsGame implements Game {
     public void increasePlayerBalance(double increaseBy) {
 
     }
+
+
 }
