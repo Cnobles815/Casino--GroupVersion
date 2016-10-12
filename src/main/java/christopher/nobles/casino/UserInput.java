@@ -6,25 +6,25 @@ import java.util.Scanner;
  * Created by christophernobles on 10/11/16.
  */
 public class UserInput {
-    Scanner userInput = new Scanner(System.in);
+    static Scanner userInput = new Scanner(System.in);
 
-    String strIn = "";
-    int intIn = 0;
-    double doubleIn = 0.0;
+    static String strIn = "";
+    static int intIn = 0;
+    static double doubleIn = 0.0;
 
 
 
-    public String getUserInputStr(){
+    static public String getUserInputStr(){
         strIn = userInput.next();
         return strIn;
     }
 
-    public int getUserInputInt(){
+    static public int getUserInputInt(){
         intIn = userInput.nextInt();
         return intIn;
     }
 
-    public double getUserInputDbl(){
+    static public double getUserInputDbl(){
         doubleIn = userInput.nextDouble();
         return doubleIn;
     }

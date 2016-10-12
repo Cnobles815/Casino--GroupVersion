@@ -1,20 +1,28 @@
 package christopher.nobles.casino;
 
+import static christopher.nobles.casino.UserInput.userInput;
+
 /**
  * Created by christophernobles on 10/11/16.
  */
 public class CasinoEngine {
     int choice;
 
-    UserInput userInput = new UserInput();
 
-     public void startCasino(){
+    MenuLogic menuLogic = new MenuLogic();
+
+    public void startCasino(){
          Display.timeStamp();
-        Display.welcome();
-         Display.mainMenu();
-         choice = userInput.getUserInput();
-         userInput.getUserInput();
+         Display.renderWelcome();
+         Display.renderMainMenu();
+         choice = UserInput.getUserInputInt();
+         menuLogic.mainMenuLogic(choice);
+    }
 
+    public void startGamesMenu(){
+        Display.renderGamesMenu();
+        choice = UserInput.getUserInputInt();
+        menuLogic.gamesMenuLogic(choice);
     }
 
     public void addPlayer(){
