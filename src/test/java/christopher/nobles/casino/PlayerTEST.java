@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by christophernobles on 10/12/16.
- */
 public class PlayerTEST {
     static final double DELTA_TOLERANCE = .0001;
 

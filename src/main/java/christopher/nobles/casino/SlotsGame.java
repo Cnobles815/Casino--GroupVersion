@@ -1,11 +1,7 @@
 package christopher.nobles.casino;
 
 import java.security.SecureRandom;
-import java.util.Random;
 
-/**
- * Created by christophernobles on 10/11/16.
- */
 public class SlotsGame implements Game {
     static SecureRandom column1 = new SecureRandom();
     static SecureRandom column2 = new SecureRandom();
@@ -34,6 +30,4 @@ public class SlotsGame implements Game {
     public void increasePlayerBalance(double increaseBy) {
 
     }
-
-
 }

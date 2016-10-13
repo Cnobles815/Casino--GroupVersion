@@ -1,14 +1,11 @@
 package christopher.nobles.casino;
 
-/**
- * Created by christophernobles on 10/12/16.
- */
 public class Player {
     double balance;
     String name;
+
     Card hand; //TODO ask about this!
     CasinoEngine casinoEngine = new CasinoEngine();
-
 
     Player(String startName, double startBalance) {
         if (PlayerCollection.playerList.size() == 0) {
@@ -19,16 +16,12 @@ public class Player {
             if (startBalance <= 1000) {
                 this.balance = startBalance;
                 this.name = startName;
-
             }
         }
             if (PlayerCollection.playerList.size() > 0)  {
                 Display.existingAccount();
             }
-
         }
-
-
 
     public double getBalance() {
         return balance;
@@ -42,7 +35,6 @@ public class Player {
     public double changeBalance(double amount) {
         double newBalance = getBalance() + amount;
         setBalance(newBalance);
-
         return newBalance;
     }
 
@@ -54,5 +46,4 @@ public class Player {
         this.name = name;
         return this.name;
     }
-
 }

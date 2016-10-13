@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by christophernobles on 10/12/16.
- */
 public class UserInputTEST {
     static final double DELTA_TOLERANCE = .0001;
     @Test
@@ -32,5 +29,4 @@ public class UserInputTEST {
         double actual = userInput.getUserInputDbl();
         assertEquals("The value should be 2.5", expected, actual, DELTA_TOLERANCE);
     }
-
 }

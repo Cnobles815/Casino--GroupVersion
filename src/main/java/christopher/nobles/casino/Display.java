@@ -2,7 +2,6 @@ package christopher.nobles.casino;
 import java.util.Date;
 
 public class Display {
-
     static Date date = new Date();
 
     static public void renderWelcome(){
@@ -35,12 +34,12 @@ public class Display {
         print("Is it random? Is it rigged? You don't care. Pull the lever.");
     }
 
-    static public String print(String output){
+    static public String print(String output) {
         System.out.println(output);
         return output;
     }
 
-    static public double printDbl(double output){
+    static public double printDbl(double output) {
         System.out.println(output);
         return output;
     }
@@ -93,11 +92,5 @@ public class Display {
                 "\nDon't try this. Just go home big fella." +
                 "\nYou don't need two accounts big fella." +
                 "\nYou don't even have a savings account fella.");
-    }
-
-
-
-    public static void print(int left, int center, int right) {
-
     }
 }

@@ -1,14 +1,10 @@
 package christopher.nobles.casino;
 
-/**
- * Created by christophernobles on 10/12/16.
- */
 public class BasicSlots extends SlotsGame {
     private int left = 0;
     private int center = 0;
     private int right = 0;
     private int choice = 0;
-
 
     @Override
     public void runGame(){
@@ -33,23 +29,21 @@ public class BasicSlots extends SlotsGame {
         if (left == right && right == center){
             Display.print("Cha-ching!");
             PlayerCollection.playerList.get(0).changeBalance(10);
-                    pull();}
+            pull();}
             else {Display.print("You suck.");
-            Display.printDbl(PlayerCollection.playerList.get(0).getBalance());
-            Display.print("Give us more money?");
-            Display.print("| [1] - Yes\n| [2] - No");
-            choice = UserInput.getUserInputInt();
-            if (choice == 1){
-                pull();}
-                else if (choice == 2) {
-                    Display.clearScreen();
-                    casinoEngine.recursiveMenu();
+                Display.printDbl(PlayerCollection.playerList.get(0).getBalance());
+                Display.print("Give us more money?");
+                Display.print("| [1] - Yes\n| [2] - No");
+                choice = UserInput.getUserInputInt();
+                    if (choice == 1){
+                        pull();
+                    }
+                    else if (choice == 2) {
+                        Display.clearScreen();
+                        casinoEngine.recursiveMenu();
+                    }
             }
-            }
-        }
-
-
-
+    }
     public int getLeft() {
         return left;
     }

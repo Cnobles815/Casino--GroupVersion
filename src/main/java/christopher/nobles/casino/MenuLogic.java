@@ -2,22 +2,15 @@ package christopher.nobles.casino;
 
 import static christopher.nobles.casino.UserInput.*;
 
-/**
- * Created by christophernobles on 10/12/16.
- */
 public class MenuLogic {
     BlackJack blackJack = new BlackJack();
     BasicSlots slots = new BasicSlots();
 
-
-
-
     public void mainMenuLogic(int choice){
         CasinoEngine casinoEngine = new CasinoEngine();
         Display display = new Display();
-        //UserInput userInput = new UserInput();
 
-        String name = "";
+        String name;
         double balance = 0;
         switch (choice) {
             case 1:         //create account

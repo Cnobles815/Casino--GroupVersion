@@ -1,8 +1,5 @@
 package christopher.nobles.casino;
 
-/**
- * Created by christophernobles on 10/10/16.
- */
 public class Card {
     private final Suit suit;
     private final int id;
@@ -12,9 +9,7 @@ public class Card {
         this.id = id;
     }
 
-    public Suit getSuit() {
-        return suit;
-    }
+    public Suit getSuit() { return suit; }
 
     public int getId() {
         return id;

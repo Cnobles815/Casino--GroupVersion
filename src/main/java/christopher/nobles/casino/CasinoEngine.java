@@ -1,10 +1,5 @@
 package christopher.nobles.casino;
 
-import static christopher.nobles.casino.UserInput.userInput;
-
-/**
- * Created by christophernobles on 10/11/16.
- */
 public class CasinoEngine {
     int choice;
 
