@@ -45,6 +45,10 @@ public class Display {
         return output;
     }
 
+    static public void clearScreen(){
+        System.out.flush();
+    }
+
     public static void renderGamesMenu(){
         timeStamp();
         print("\nWe have quite a few ways for you to lose money here. Pick one." +
@@ -66,12 +70,29 @@ public class Display {
 
     public void accountCreation(){
         print("You might as well say your name is 'Charity'." +
-                "\nAll the money you're about to give away. I'm just sayin big fella." +
-                "\nBut alright what do you want to be called?" +
                 "\nAnd how much do you want in your wallet to start?" +
                 "\nDon't try and tell me you're gonna drop over a grand in here." +
                 "\nDon't do that big fella. Don't get me started on you big fella." +
-                "\n            [[NAME/STARTING BALANCE]]");
+                "\n            [[ENTER NAME/STARTING BALANCE]]");
+    }
+
+    public static void bringItDown(){
+        print("Woah there big fella." +
+                "\nYou know you can't afford that much big fella." +
+                "\nBring it down under 1k big fella." +
+                "\nYou know you borrowed that money big fella." +
+                "\nYou know that wallet is a rental big fella." +
+                "\nYou ain't pay Tommy back yet big fella." +
+                "\nBring it down. I said bring it down big fella!");
+    }
+
+    public static void existingAccount(){
+        print("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
+                "\nWe know you're broke. We know you're broke." +
+                "\nWe got your name big fella don't try this." +
+                "\nDon't try this. Just go home big fella." +
+                "\nYou don't need two accounts big fella." +
+                "\nYou don't even have a savings account fella.");
     }
 
 

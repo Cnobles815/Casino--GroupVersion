@@ -41,7 +41,10 @@ public class BasicSlots extends SlotsGame {
             choice = UserInput.getUserInputInt();
             if (choice == 1){
                 pull();}
-                else casinoEngine.recursiveMenu();
+                else if (choice == 2) {
+                    Display.clearScreen();
+                    casinoEngine.recursiveMenu();
+            }
             }
         }
 
