@@ -1,8 +1,9 @@
 package christopher.nobles.casino;
 
-import static java.lang.String.valueOf;
+import java.util.ArrayList;
 
 public class BlackJack extends CardGame  {
+
     int bet = 0;
 
     private Deck deck = new Deck(DeckType.STANDARD);
@@ -11,11 +12,11 @@ public class BlackJack extends CardGame  {
 
     public void runGame(){
         Display.renderBlackJackStart();
-        deal();
+        deal(5, shuffled.shuffledDeck, hand.hand);
     }
 
-    public void deal(){
-        deck.drawDown(4, shuffled.shuffledDeck, hand.hand);
+    public void deal(int cardNum, ArrayList<Card> from, ArrayList<Card> to){
+        deck.drawDown(cardNum, from, to);
         Display.playerHand(hand.hand);
     }
 
