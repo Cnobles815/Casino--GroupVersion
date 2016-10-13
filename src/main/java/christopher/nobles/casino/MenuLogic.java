@@ -14,7 +14,7 @@ public class MenuLogic {
         double balance = 0;
         switch (choice) {
             case 1:         //create account
-                display.accountCreation();
+                display.renderAccountCreationPrompt();
                 name = getUserInputStr();
                 balance = getUserInputDbl();
                 Player player = new Player(name, balance);
@@ -25,7 +25,7 @@ public class MenuLogic {
                 break;
             case 3:          //games menu
                 if (PlayerCollection.playerList.isEmpty()){
-                    display.triedToGoToGamesMenuWithNoAccount();
+                    display.renderNoAccountAlert();
                     casinoEngine.recursiveMenu();
                 }
                 casinoEngine.startGamesMenu();

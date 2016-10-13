@@ -10,7 +10,7 @@ public class Player {
     Player(String startName, double startBalance) {
         if (PlayerCollection.playerList.size() == 0) {
             if (startBalance > 1000) {
-                Display.bringItDown();
+                Display.renderBringItDownAlert();
                 casinoEngine.startCasino();
             }
             if (startBalance <= 1000) {
@@ -19,7 +19,7 @@ public class Player {
             }
         }
             if (PlayerCollection.playerList.size() > 0)  {
-                Display.existingAccount();
+                Display.renderExistingAccountAlert();
             }
         }
 

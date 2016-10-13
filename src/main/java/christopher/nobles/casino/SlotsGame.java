@@ -25,7 +25,7 @@ public class SlotsGame implements Game {
 
     public void belowPlayerBalance() {
         if (PlayerCollection.playerList.get(0).getBalance() <= 0) {
-            Display.noMoMoney();
+            Display.renderNoMoneyAlert();
             CasinoEngine.exit();
         }
     }

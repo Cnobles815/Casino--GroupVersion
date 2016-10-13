@@ -58,14 +58,14 @@ public class Display {
                 " \n| [4] - Return to Main Menu");
     }
 
-    public void triedToGoToGamesMenuWithNoAccount(){
+    public void renderNoAccountAlert(){
             print("Now you know you don't have an account big fella." +
                 "\nNobody calls you X big fella." +
                 "\nThe streets don't call you anything but late big fella." +
                 "\nMake an account! Make an account.");
     }
 
-    public void accountCreation(){
+    public void renderAccountCreationPrompt(){
         print("You might as well say your name is 'Charity'." +
                 "\nAnd how much do you want in your wallet to start?" +
                 "\nDon't try and tell me you're gonna drop over a grand in here." +
@@ -73,7 +73,7 @@ public class Display {
                 "\n            [[ENTER NAME/STARTING BALANCE]]");
     }
 
-    public static void bringItDown(){
+    public static void renderBringItDownAlert(){
         print("Woah there big fella." +
                 "\nYou know you can't afford that much big fella." +
                 "\nBring it down under 1k big fella." +
@@ -83,7 +83,7 @@ public class Display {
                 "\nBring it down. I said bring it down big fella!");
     }
 
-    public static void existingAccount(){
+    public static void renderExistingAccountAlert(){
         print("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
                 "\nWe got your name big fella don't try this." +
                 "\nDon't try this. Just go on home big fella." +
@@ -91,7 +91,7 @@ public class Display {
                 "\nYou don't even have a savings account fella.");
     }
 
-    public static void noMoMoney(){
+    public static void renderNoMoneyAlert(){
         print("YOU RAN OUT OF MONEY! GET OUT!");
     }
 }
