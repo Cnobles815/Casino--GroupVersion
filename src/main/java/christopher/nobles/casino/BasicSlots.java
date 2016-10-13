@@ -14,6 +14,7 @@ public class BasicSlots extends SlotsGame {
 
     public String pull(){
         PlayerCollection.playerList.get(0).changeBalance(-5);
+        belowPlayerBalance();
           setLeft(getColumn1());
           setCenter(getColumn2());
           setRight(getColumn3());
@@ -36,6 +37,7 @@ public class BasicSlots extends SlotsGame {
                 Display.print("| [1] - Yes\n| [2] - No");
                 choice = UserInput.getUserInputInt();
                     if (choice == 1){
+                        belowPlayerBalance();
                         pull();
                     }
                     else if (choice == 2) {
@@ -44,6 +46,8 @@ public class BasicSlots extends SlotsGame {
                     }
             }
     }
+
+
     public int getLeft() {
         return left;
     }
@@ -67,4 +71,5 @@ public class BasicSlots extends SlotsGame {
     public void setRight(int right) {
         this.right = right;
     }
+
 }

@@ -5,11 +5,11 @@ public class Display {
     static Date date = new Date();
 
     static public void renderWelcome(){
-        print("        \n\nWelcome to to Nobles Casino! \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
+        print("        \nWelcome to to Nobles Casino! \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
     }
 
     static public void renderMainMenu(){
-        print("     \n \n|     [[MAIN MENU]]" +
+        print("     \n|     [[MAIN MENU]]" +
                 " \n| [1] - Create Account" +
                 " \n| [2] - Existing Player" +
                 " \n| [3] - Games Menu" +
@@ -60,8 +60,6 @@ public class Display {
 
     public void triedToGoToGamesMenuWithNoAccount(){
             print("Now you know you don't have an account big fella." +
-                "\nThere's no escaping debt about here big fella." +
-                "\nMake a login big fella. With your real name." +
                 "\nNobody calls you X big fella." +
                 "\nThe streets don't call you anything but late big fella." +
                 "\nMake an account! Make an account.");
@@ -87,10 +85,13 @@ public class Display {
 
     public static void existingAccount(){
         print("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
-                "\nWe know you're broke. We know you're broke." +
                 "\nWe got your name big fella don't try this." +
                 "\nDon't try this. Just go home big fella." +
                 "\nYou don't need two accounts big fella." +
                 "\nYou don't even have a savings account fella.");
+    }
+
+    public static void noMoMoney(){
+        print("YOU RAN OUT OF MONEY! GET OUT!");
     }
 }

@@ -7,7 +7,7 @@ public class CardGame implements Game {
 
     }
 
-    public void belowPlayerBalance(double balCheck) {
+    public void belowPlayerBalance() {
 
     }
 
