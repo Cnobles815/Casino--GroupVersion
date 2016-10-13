@@ -1,5 +1,6 @@
 package christopher.nobles.casino;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -8,37 +9,73 @@ import java.util.List;
  */
 public class Deck {
 
-    static Card[] standardDeck = new Card[52];
-    static Card[] hand = new Card[5];
+     ArrayList<Card> standardDeck = new ArrayList<Card>();
+     ArrayList<Card> hand = new ArrayList<Card>();
+     ArrayList<Card> shuffledDeck = new ArrayList<Card>();
 
 
-    Deck() {
+    Deck(DeckType type) {
+        switch (type) {
+            case STANDARD:
+                for (int i = 0; i <= 12; i++) {
+                    standardDeck.add(i , new Card(Suit.CLUBS, i + 1));
+                }
+                for (int i = 13; i <= 25; i++) {
+                    standardDeck.add(i , new Card(Suit.DIAMONDS, i - 12));
+                }
+                for (int i = 26; i <= 38; i++) {
+                    standardDeck.add(i , new Card(Suit.HEARTS, i - 25));
+                }
+                for (int i = 39; i < 52; i++) {
+                    standardDeck.add(i , new Card(Suit.SPADES, i - 38));
+                }
+                break;
 
-        int suitCount = 0;
-        int cardCount = 0;
+            case SHUFFLED:
+                for (int i = 0; i <= 12; i++) {
+                    shuffledDeck.add(i , new Card(Suit.CLUBS, i + 1));
+                }
+                for (int i = 13; i <= 25; i++) {
+                    shuffledDeck.add(i , new Card(Suit.DIAMONDS, i - 12));
+                }
+                for (int i = 26; i <= 38; i++) {
+                    shuffledDeck.add(i , new Card(Suit.HEARTS, i - 25));
+                }
+                for (int i = 39; i < 52; i++) {
+                    shuffledDeck.add(i , new Card(Suit.SPADES, i - 38));
+                }
+                shuffleDeck(shuffledDeck);
+                break;
 
-        for (int i = 0; i <= 12; i++) {
-            standardDeck[i] = new Card(Suit.CLUBS, i + 1);
-        }
+            case DOUBLESTANDARD:
+                for (int i = 0; i <= 12; i++) {
+                    shuffledDeck.add(i , new Card(Suit.CLUBS, i + 1));
+                }
+                for (int i = 13; i <= 25; i++) {
+                    shuffledDeck.add(i , new Card(Suit.DIAMONDS, i - 12));
+                }
+                for (int i = 26; i <= 38; i++) {
+                    shuffledDeck.add(i , new Card(Suit.HEARTS, i - 25));
+                }
+                for (int i = 39; i < 52; i++) {
+                    shuffledDeck.add(i , new Card(Suit.SPADES, i - 38));
+                }
 
-        for (int i = 13; i <= 25; i++) {
-            standardDeck[i] = new Card(Suit.DIAMONDS, i - 12);
-        }
 
-        for (int i = 26; i <= 38; i++) {
-            standardDeck[i] = new Card(Suit.HEARTS, i - 25);
-        }
-
-        for (int i = 39; i < standardDeck.length; i++) {
-            standardDeck[i] = new Card(Suit.SPADES, i - 38);
         }
     }
 
-    public void shuffleDeck(Deck deck){
-        Collections.shuffle((List<?>) deck);
+
+
+    public void shuffleDeck(ArrayList<Card> deck){
+        Collections.shuffle(deck);
     }
 
-    public void drawDown(int drawNum){
+    public void drawDown(int drawNum, Deck deck){
+        for (int i = 0; i < drawNum; i++){
+            hand.add(standardDeck.get(i));
+
+        }
 
     }
 
