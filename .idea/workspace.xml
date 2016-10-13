@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ed4ed35-59bc-48d5-a82c-11b2232dcab4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/BasicSlots.class" afterPath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/BasicSlots.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/CasinoEngine.class" afterPath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/CasinoEngine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/Display.class" afterPath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/Display.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/SlotsGame.class" afterPath="$PROJECT_DIR$/target/classes/christopher/nobles/casino/SlotsGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/christopher/nobles/casino/BasicSlots.java" afterPath="$PROJECT_DIR$/src/main/java/christopher/nobles/casino/BasicSlots.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CasinoEngine.java" afterPath="$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CasinoEngine.java" />
-    </list>
+    <list default="true" id="1ed4ed35-59bc-48d5-a82c-11b2232dcab4" name="Default" comment="" />
     <ignored path="NoblesCasino.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CasinoEngine.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CasinoEngine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CasinoEngine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="420">
               <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
                 <element signature="e#766#767#0" expanded="true" />
@@ -92,16 +84,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NonCardGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/NonCardGame.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,6 +104,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BlackJack.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/BlackJack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BasicSlots.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/BasicSlots.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,8 +127,8 @@
       <file leaf-file-name="CardGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CardGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -917,7 +909,7 @@
       <workItem from="1476275909561" duration="2814000" />
       <workItem from="1476281564010" duration="39899000" />
       <workItem from="1476383719140" duration="4124000" />
-      <workItem from="1476387945162" duration="4310000" />
+      <workItem from="1476387945162" duration="4459000" />
     </task>
     <servers />
   </component>
@@ -954,7 +946,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60515000" />
+    <option name="totallyTimeSpent" value="60664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1344,14 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/BlackJack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1364,14 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CardGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1411,14 +1387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/AMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/SlotsGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1429,12 +1397,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CasinoEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="420">
           <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="e#766#767#0" expanded="true" />
             <element signature="e#799#800#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/AMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/CardGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/BlackJack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
