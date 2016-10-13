@@ -12,18 +12,16 @@ public class Deck {
 
 
     Deck(DeckType type) {
-        shuffledDeck = new ArrayList<Card>();
-        standardDeck = new ArrayList<Card>();
-        hand = new ArrayList<Card>();
-
         switch (type) {
             case STANDARD:
+                standardDeck = new ArrayList<Card>();
                 for (int i = 0; i <= 12; i++) {standardDeck.add(i , new Card(Suit.CLUBS, i + 1));}
                 for (int i = 13; i <= 25; i++) {standardDeck.add(i , new Card(Suit.DIAMONDS, i - 12));}
                 for (int i = 26; i <= 38; i++) {standardDeck.add(i , new Card(Suit.HEARTS, i - 25));}
                 for (int i = 39; i < 52; i++) {standardDeck.add(i , new Card(Suit.SPADES, i - 38));}
                 break;
             case SHUFFLED:
+                shuffledDeck = new ArrayList<Card>();
                 for (int i = 0; i <= 12; i++) {shuffledDeck.add(i , new Card(Suit.CLUBS, i + 1));}
                 for (int i = 13; i <= 25; i++) {shuffledDeck.add(i , new Card(Suit.DIAMONDS, i - 12));}
                 for (int i = 26; i <= 38; i++) {shuffledDeck.add(i , new Card(Suit.HEARTS, i - 25));}
@@ -35,6 +33,9 @@ public class Deck {
                 for (int i = 13; i <= 25; i++) {shuffledDeck.add(i , new Card(Suit.DIAMONDS, i - 12));}
                 for (int i = 26; i <= 38; i++) {shuffledDeck.add(i , new Card(Suit.HEARTS, i - 25));}
                 for (int i = 39; i < 52; i++) {shuffledDeck.add(i , new Card(Suit.SPADES, i - 38));}
+                break;
+            case HAND:
+                hand = new ArrayList<Card>();
         }
     }
 
@@ -44,11 +45,13 @@ public class Deck {
         Collections.shuffle(deck);
     }
 
-    public void drawDown(int drawNum, Deck deck){
-        for (int i = 0; i < drawNum; i++){
-            hand.add(standardDeck.get(i));
+    public void drawDown(int drawNum, ArrayList<Card> from, ArrayList<Card> to) {
+        for (int i = 0; i < drawNum; i++) {
+            to.add(i, from.get(i));
+            from.remove(i);
         }
     }
+
 }
 //TODO LEGACY CODE DO NOT REMOVE
 /*      Card clubsAce = new Card(Suit.CLUBS, 1);

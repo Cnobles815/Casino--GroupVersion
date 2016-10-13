@@ -2,16 +2,21 @@ package christopher.nobles.casino;
 
 public class Card {
     private final Suit suit;
-    private final int id;
+    private final int rank;
 
-    Card(Suit suit, int id){
+    Card(Suit suit, int rank){
         this.suit = suit;
-        this.id = id;
+        this.rank = rank;
     }
 
     public Suit getSuit() { return suit; }
 
-    public int getId() {
-        return id;
+    public int getRank() {
+        return rank;
+    }
+
+    @Override
+    public String toString(){
+        return this.rank + " of " + this.suit;
     }
 }

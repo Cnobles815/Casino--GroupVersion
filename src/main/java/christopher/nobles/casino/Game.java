@@ -1,6 +1,6 @@
 package christopher.nobles.casino;
 
 public interface Game {
-    public void runGame();
-    public void belowPlayerBalance();
+    void runGame();
+    void belowPlayerBalance();
 }

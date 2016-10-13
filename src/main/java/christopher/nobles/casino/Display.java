@@ -1,14 +1,17 @@
 package christopher.nobles.casino;
+import java.util.ArrayList;
 import java.util.Date;
+
+import static java.lang.String.valueOf;
 
 public class Display {
     static Date date = new Date();
 
-    static public void renderWelcome(){
+    static void renderWelcome(){
         print("        \nWelcome to to Nobles Casino! \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
     }
 
-    static public void renderMainMenu(){
+    static void renderMainMenu(){
         print("     \n|     [[MAIN MENU]]" +
                 " \n| [1] - Create Account" +
                 " \n| [2] - Existing Player" +
@@ -21,34 +24,34 @@ public class Display {
         print("");
     }
 
-    static public void playerHand(){
-        print("");
+    static void playerHand(ArrayList<Card> arrayList){
+        print(valueOf(arrayList));
     }
 
-    static public void timeStamp() {
+    static void timeStamp() {
         print(String.format((char)27 + "[34;1m%76s",date.toString()));
         print((char)27 + "[0m");
     }
     
-    static public void renderSlotsWelcome(){
+    static void renderSlotsWelcome(){
         print("Is it random? Is it rigged? You don't care. Pull the lever.");
     }
 
-    static public String print(String output) {
+    static String print(String output) {
         System.out.println(output);
         return output;
     }
 
-    static public double printDbl(double output) {
+    static double printDbl(double output) {
         System.out.println(output);
         return output;
     }
 
-    static public void clearScreen(){
+    static void clearScreen(){
         System.out.flush();
     }
 
-    public static void renderGamesMenu(){
+    static void renderGamesMenu(){
         timeStamp();
         print("\nWe have quite a few ways for you to lose money here. Pick one." +
                 " \n|     [[GAMES MENU]]" +
@@ -58,14 +61,14 @@ public class Display {
                 " \n| [4] - Return to Main Menu");
     }
 
-    public void renderNoAccountAlert(){
+    void renderNoAccountAlert(){
             print("Now you know you don't have an account big fella." +
                 "\nNobody calls you X big fella." +
                 "\nThe streets don't call you anything but late big fella." +
                 "\nMake an account! Make an account.");
     }
 
-    public void renderAccountCreationPrompt(){
+    void renderAccountCreationPrompt(){
         print("You might as well say your name is 'Charity'." +
                 "\nAnd how much do you want in your wallet to start?" +
                 "\nDon't try and tell me you're gonna drop over a grand in here." +
@@ -73,7 +76,7 @@ public class Display {
                 "\n            [[ENTER NAME/STARTING BALANCE]]");
     }
 
-    public static void renderBringItDownAlert(){
+    static void renderBringItDownAlert(){
         print("Woah there big fella." +
                 "\nYou know you can't afford that much big fella." +
                 "\nBring it down under 1k big fella." +
@@ -83,7 +86,7 @@ public class Display {
                 "\nBring it down. I said bring it down big fella!");
     }
 
-    public static void renderExistingAccountAlert(){
+    static void renderExistingAccountAlert(){
         print("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
                 "\nWe got your name big fella don't try this." +
                 "\nDon't try this. Just go on home big fella." +
@@ -91,7 +94,14 @@ public class Display {
                 "\nYou don't even have a savings account fella.");
     }
 
-    public static void renderNoMoneyAlert(){
+    static void renderNoMoneyAlert(){
         print("YOU RAN OUT OF MONEY! GET OUT!");
     }
+
+    static void renderBlackJackStart() {
+        print("Take a seat at the table. Look closely at this table." +
+                "\nVery soon, you won't be able to afford this table." +
+                "\nPLACE YOUR BET!");
+    }
+
 }
