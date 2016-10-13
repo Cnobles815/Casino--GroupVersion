@@ -24,6 +24,7 @@ public class Player {
         }
             if (PlayerCollection.playerList.size() > 0)  {
                 Display.existingAccount();
+                Display.clearScreen();
             }
 
         }
