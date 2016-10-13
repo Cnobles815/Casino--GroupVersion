@@ -46,10 +46,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -913,7 +913,7 @@
       <workItem from="1476119186156" duration="7856000" />
       <workItem from="1476213078776" duration="1512000" />
       <workItem from="1476275909561" duration="2814000" />
-      <workItem from="1476281564010" duration="37573000" />
+      <workItem from="1476281564010" duration="37631000" />
     </task>
     <servers />
   </component>
@@ -950,7 +950,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49755000" />
+    <option name="totallyTimeSpent" value="49813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="640" extended-state="0" />
@@ -1019,8 +1019,8 @@
         <state relative-caret-position="75">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1419,10 +1419,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/christopher/nobles/casino/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
