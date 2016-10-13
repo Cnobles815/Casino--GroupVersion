@@ -21,7 +21,6 @@ public class BasicSlots extends SlotsGame {
         Display.timeStamp();
         Display.print("\n\n" + left + "||" + center + "||" + right);
         compare(left, center, right);
-
         return left + " " + center + " " + right;
     }
 

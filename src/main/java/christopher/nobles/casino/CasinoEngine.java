@@ -6,7 +6,7 @@ public class CasinoEngine {
 
     MenuLogic menuLogic = new MenuLogic();
 
-    static void exit(){}
+
 
     public void startCasino(){
          Display.timeStamp();
@@ -32,5 +32,7 @@ public class CasinoEngine {
     public void addPlayer(){
 
     }
-
+    static void exit(){
+        System.exit(9000);
+    }
 }
