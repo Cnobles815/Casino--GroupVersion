@@ -11,7 +11,6 @@ public class PlayerCollection {
 
     static void addPlayer(Player player){
         playerList.add(player);
-        playerList.size();
     }
 
 

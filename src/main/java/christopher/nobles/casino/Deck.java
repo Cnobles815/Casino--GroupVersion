@@ -1,11 +1,15 @@
 package christopher.nobles.casino;
 
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Created by christophernobles on 10/11/16.
  */
 public class Deck {
 
-    Card[] standardDeck = new Card[52];
+    static Card[] standardDeck = new Card[52];
+    static Card[] hand = new Card[5];
 
 
     Deck() {
@@ -28,6 +32,14 @@ public class Deck {
         for (int i = 39; i < standardDeck.length; i++) {
             standardDeck[i] = new Card(Suit.SPADES, i - 38);
         }
+    }
+
+    public void shuffleDeck(Deck deck){
+        Collections.shuffle((List<?>) deck);
+    }
+
+    public void drawDown(int drawNum){
+
     }
 
 }
