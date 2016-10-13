@@ -86,7 +86,7 @@ public class Display {
     public static void existingAccount(){
         print("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
                 "\nWe got your name big fella don't try this." +
-                "\nDon't try this. Just go home big fella." +
+                "\nDon't try this. Just go on home big fella." +
                 "\nYou don't need two accounts big fella." +
                 "\nYou don't even have a savings account fella.");
     }
