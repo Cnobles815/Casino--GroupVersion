@@ -33,6 +33,13 @@ public class Player {
         return this.balance;
     }
 
+    public double changeBalance(double amount) {
+        double newBalance = getBalance() + amount;
+        setBalance(newBalance);
+
+        return newBalance;
+    }
+
     public String getName() {
         return name;
     }

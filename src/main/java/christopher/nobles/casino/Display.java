@@ -40,6 +40,11 @@ public class Display {
         return output;
     }
 
+    static public double printDbl(double output){
+        System.out.println(output);
+        return output;
+    }
+
     public static void renderGamesMenu(){
         timeStamp();
         print("\nWe have quite a few ways for you to lose money here. Pick one." +
@@ -68,6 +73,7 @@ public class Display {
                 "\nDon't do that big fella. Don't get me started on you big fella." +
                 "\n            [[NAME/STARTING BALANCE]]");
     }
+
 
 
     public static void print(int left, int center, int right) {

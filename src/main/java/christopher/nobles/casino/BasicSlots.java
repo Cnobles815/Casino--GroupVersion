@@ -1,5 +1,4 @@
 package christopher.nobles.casino;
-import java.security.SecureRandom;
 
 /**
  * Created by christophernobles on 10/12/16.
@@ -18,7 +17,7 @@ public class BasicSlots extends SlotsGame {
     }
 
     public String pull(){
-
+        PlayerCollection.playerList.get(0).changeBalance(-5);
           setLeft(getColumn1());
           setCenter(getColumn2());
           setRight(getColumn3());
@@ -30,16 +29,19 @@ public class BasicSlots extends SlotsGame {
     }
 
     public void compare(int left, int center, int right){
+        CasinoEngine casinoEngine = new CasinoEngine();
         if (left == right && right == center){
             Display.print("Cha-ching!");
+            PlayerCollection.playerList.get(0).changeBalance(10);
                     pull();}
             else {Display.print("You suck.");
+            Display.printDbl(PlayerCollection.playerList.get(0).getBalance());
             Display.print("Give us more money?");
             Display.print("| [1] - Yes\n| [2] - No");
             choice = UserInput.getUserInputInt();
             if (choice == 1){
                 pull();}
-                else CasinoEngine.exit();
+                else casinoEngine.recursiveMenu();
             }
         }
 

@@ -26,20 +26,22 @@ public class MenuLogic {
                 balance = getUserInputDbl();
                 Player player = new Player(name, balance);
                 PlayerCollection.addPlayer(player);
-                casinoEngine.noAccountMenu();
+                casinoEngine.recursiveMenu();
                 break;
             case 2:
                 break;
             case 3:          //games menu
                 if (PlayerCollection.playerList.isEmpty()){
                     display.triedToGoToGamesMenuWithNoAccount();
-                    casinoEngine.noAccountMenu();
+                    casinoEngine.recursiveMenu();
                 }
                 casinoEngine.startGamesMenu();
                 break;
             case 4:
+
                 break;
             case 5:
+                CasinoEngine.exit();
                 break;
         }
     }
@@ -56,7 +58,7 @@ public class MenuLogic {
             case 3:
                 break;
             case 4:
-
+                casinoEngine.recursiveMenu();
                 break;
             default:
 

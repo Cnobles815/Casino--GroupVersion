@@ -27,7 +27,7 @@ public class CasinoEngine {
         menuLogic.gamesMenuLogic(choice);
     }
 
-    public void noAccountMenu(){
+    public void recursiveMenu(){
         Display.timeStamp();
         Display.renderMainMenu();
         choice = UserInput.getUserInputInt();

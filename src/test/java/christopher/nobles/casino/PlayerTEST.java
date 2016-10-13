@@ -41,4 +41,12 @@ public class PlayerTEST {
         double actual = player.setBalance(3.5);
         assertEquals("The value should be 3.5", expected, actual, DELTA_TOLERANCE);
     }
+
+    @Test
+    public void changePlayerBalanceTEST(){
+        Player player = new Player("Erin", 2.5);
+        double expected = 3.5;
+        double actual = player.changeBalance(1.0);
+        assertEquals("The value should be 3.5" , expected, actual, DELTA_TOLERANCE);
+    }
 }
