@@ -14,7 +14,8 @@ public class Display {
                 " \n| [1] - Create Account" +
                 " \n| [2] - Existing Player" +
                 " \n| [3] - Games Menu" +
-                " \n| [4] - Account Options");
+                " \n| [4] - Account Options" +
+                " \n| [5] - Exit(No Refunds)");
     }
 
     static public void dealerHand(){
@@ -45,7 +46,27 @@ public class Display {
                 " \n|     [[GAMES MENU]]" +
                 " \n| [1] - Slots(Basic)" +
                 " \n| [2] - Blackjack" +
-                " \n| [3] - Crazy8");
+                " \n| [3] - Crazy8" +
+                " \n| [4] - Return to Main Menu");
+    }
+
+    public void triedToGoToGamesMenuWithNoAccount(){
+            print("Now you know you don't have an account big fella." +
+                "\nThere's no escaping debt about here big fella." +
+                "\nMake a login big fella. With your real name." +
+                "\nNobody calls you X big fella." +
+                "\nThe streets don't call you anything but late big fella." +
+                "\nMake an account! Make an account.");
+    }
+
+    public void accountCreation(){
+        print("You might as well say your name is 'Charity'." +
+                "\nAll the money you're about to give away. I'm just sayin big fella." +
+                "\nBut alright what do you want to be called?" +
+                "\nAnd how much do you want in your wallet to start?" +
+                "\nDon't try and tell me you're gonna drop over a grand in here." +
+                "\nDon't do that big fella. Don't get me started on you big fella." +
+                "\n            [[NAME/STARTING BALANCE]]");
     }
 
 

@@ -18,6 +18,7 @@ public class BasicSlots extends SlotsGame {
     }
 
     public String pull(){
+
           setLeft(getColumn1());
           setCenter(getColumn2());
           setRight(getColumn3());

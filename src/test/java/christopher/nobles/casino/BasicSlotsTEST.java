@@ -12,7 +12,7 @@ public class BasicSlotsTEST {
     @Test
     public void pullTEST(){
         BasicSlots basicSlots = new BasicSlots();
-        String expected = "5 5 5";
+        String expected = "5 || 5 || 5";
         String actual = basicSlots.pull();
         assertEquals("The value should be 5 5 5", expected, actual);
     }

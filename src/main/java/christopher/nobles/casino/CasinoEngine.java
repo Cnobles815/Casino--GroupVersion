@@ -27,6 +27,13 @@ public class CasinoEngine {
         menuLogic.gamesMenuLogic(choice);
     }
 
+    public void noAccountMenu(){
+        Display.timeStamp();
+        Display.renderMainMenu();
+        choice = UserInput.getUserInputInt();
+        menuLogic.mainMenuLogic(choice);
+    }
+
     public void addPlayer(){
 
     }

@@ -1,5 +1,7 @@
 package christopher.nobles.casino;
 
+import static christopher.nobles.casino.UserInput.*;
+
 /**
  * Created by christophernobles on 10/12/16.
  */
@@ -12,12 +14,27 @@ public class MenuLogic {
 
     public void mainMenuLogic(int choice){
         CasinoEngine casinoEngine = new CasinoEngine();
+        Display display = new Display();
+        //UserInput userInput = new UserInput();
+
+        String name = "";
+        double balance = 0;
         switch (choice) {
-            case 1:
+            case 1:         //create account
+                display.accountCreation();
+                name = getUserInputStr();
+                balance = getUserInputDbl();
+                Player player = new Player(name, balance);
+                PlayerCollection.addPlayer(player);
+                casinoEngine.noAccountMenu();
                 break;
             case 2:
                 break;
-            case 3:
+            case 3:          //games menu
+                if (PlayerCollection.playerList.isEmpty()){
+                    display.triedToGoToGamesMenuWithNoAccount();
+                    casinoEngine.noAccountMenu();
+                }
                 casinoEngine.startGamesMenu();
                 break;
             case 4:
@@ -28,6 +45,7 @@ public class MenuLogic {
     }
 
     public void gamesMenuLogic(int choice) {
+        CasinoEngine casinoEngine = new CasinoEngine();
         switch (choice) {
             case 1:
                 slots.runGame();
@@ -38,6 +56,7 @@ public class MenuLogic {
             case 3:
                 break;
             case 4:
+
                 break;
             default:
 
