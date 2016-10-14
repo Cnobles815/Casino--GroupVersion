@@ -10,6 +10,12 @@ public class BlackJack extends CardGame  {
     private Deck hand = new Deck(DeckType.HAND);
     private Deck dealerShuffled = new Deck (DeckType.SHUFFLED);
 
+    public void unfinishedGame(){
+        CasinoEngine casinoEngine = new CasinoEngine();
+        Display.renderUnderConstructionAlert();
+        casinoEngine.gamesMenu();
+    }
+
     public void runGame(){
         Display.renderBlackJackStart();
         deal(5, dealerShuffled.shuffledDeck, hand.hand);

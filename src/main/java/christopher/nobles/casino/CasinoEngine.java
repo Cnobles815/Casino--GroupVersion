@@ -16,7 +16,7 @@ public class CasinoEngine {
          menuLogic.mainMenuLogic(choice);
     }
 
-    public void startGamesMenu(){
+    public void gamesMenu(){
         Display.renderGamesMenu();
         choice = UserInput.getUserInputInt();
         menuLogic.gamesMenuLogic(choice);

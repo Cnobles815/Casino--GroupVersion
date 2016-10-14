@@ -15,6 +15,7 @@ public class HighLow extends CardGame {
     Deck currentHand = new Deck(HAND);
 
     public void runGame(){
+        belowPlayerBalance();
         Display.doubleNewLine();
         Display.timeStamp();
         Display.renderHighLowWelcome();
@@ -29,10 +30,10 @@ public class HighLow extends CardGame {
     }
 
     public void runGameAgain(){
+        belowPlayerBalance();
         discard(currentHand.hand, 0);
         deal(1, dealerShuffled.shuffledDeck, currentHand.hand);
         Display.playerHand(currentHand.hand);
-        Display.doubleNewLine();
         Display.doubleNewLine();
         Display.renderHighLowBetPrompt();
         setWager();

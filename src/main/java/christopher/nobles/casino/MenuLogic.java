@@ -29,7 +29,7 @@ public class MenuLogic {
                     display.renderNoAccountAlert();
                     casinoEngine.recursiveMenu();
                 }
-                casinoEngine.startGamesMenu();
+                casinoEngine.gamesMenu();
                 break;
             case 4:
 
@@ -47,7 +47,7 @@ public class MenuLogic {
                 slots.runGame();
                 break;
             case 2:
-                blackJack.runGame();
+                blackJack.unfinishedGame();
                 break;
             case 3:
                 highLow.runGame();

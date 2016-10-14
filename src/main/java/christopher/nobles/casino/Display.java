@@ -132,7 +132,7 @@ public class Display {
     }
 
     static void playerBalance(){
-        printLn("Your current balance is: ");
+        printLn(PlayerCollection.playerList.get(0).getName()+ ", " + "your current balance is: ");
         printDbl(PlayerCollection.playerList.get(0).getBalance());
     }
 
@@ -157,6 +157,16 @@ public class Display {
         printLn("Do you want to try again?" +
                 "\n[1] - Play Again" +
                 "\n[2] - Back to Main Menu");
+    }
+
+    static void debt(){
+        printLn("NOW YOU'RE IN DEBT!" +
+                "\nGET OUT!");
+    }
+
+    static void renderUnderConstructionAlert(){
+        printLn("This game either is not finished or under construction." +
+                "\nPlease choose a different way to give away your money.");
     }
 
 

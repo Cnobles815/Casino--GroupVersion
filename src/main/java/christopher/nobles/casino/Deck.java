@@ -45,11 +45,12 @@ public class Deck {
         Collections.shuffle(deck);
     }
 
-    public void drawDown(int drawNum, ArrayList<Card> from, ArrayList<Card> to) {
+    public int drawDown(int drawNum, ArrayList<Card> from, ArrayList<Card> to) {
         for (int i = 0; i < drawNum; i++) {
             to.add(i, from.get(i));
             from.remove(i);
         }
+        return to.get(0).getRank();
     }
 
 }
