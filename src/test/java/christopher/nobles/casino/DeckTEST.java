@@ -23,14 +23,22 @@ public class DeckTEST {
     }
 
     @Test
+    public void doubleStandardDeckLengthTest(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        int expected = 105;
+        int actual = deck.dsDeck.size();
+        assertEquals("The value should be 104", expected, actual);
+    }
+
+    @Test
     public void standardClubAceTest(){
         Deck deck = new Deck(DeckType.STANDARD);
         //first - Ace of Clubs
         //last - King of Spades
         Card ace = deck.standardDeck.get(0);
         int expectedRank = 1;
-        int actualId = ace.getRank();
-        assertEquals("The value should be 1", expectedRank, actualId);
+        int actualRank = ace.getRank();
+        assertEquals("The value should be 1", expectedRank, actualRank);
 
         Suit expectedSuit = Suit.CLUBS;
         Suit actualSuit = ace.getSuit();
@@ -122,6 +130,113 @@ public class DeckTEST {
         int expectedRank = 13;
         int actualRank = king.getRank();
         assertEquals("The value should be 13", expectedRank, actualRank );
+
+        Suit expectedSuit = Suit.SPADES;
+        Suit actualSuit = king.getSuit();
+        assertEquals("The suit should be SPADES", expectedSuit, actualSuit);
+    }
+
+
+    @Test
+    public void doubleStandardClubAceTest(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        //first - Ace of Clubs
+        //last - King of Spades
+        Card ace = deck.dsDeck.get(53);
+        int expectedRank = 1;
+        int actualRank = ace.getRank();
+        assertEquals("The value should be 1", expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.CLUBS;
+        Suit actualSuit = ace.getSuit();
+        assertEquals("The suit should be CLUBS", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardClubKingTest(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card king = deck.dsDeck.get(65);
+        int expectedRank = 13;
+        int actualRank = king.getRank();
+        assertEquals("The rank should be 13", expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.CLUBS;
+        Suit actualSuit = king.getSuit();
+        assertEquals("The suit should be CLUBS", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardDiamondsAce(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card ace = deck.dsDeck.get(66);
+        int expectedRank = 1;
+        int actualRank = ace.getRank();
+        assertEquals("The rank should be 1", expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.DIAMONDS;
+        Suit actualSuit = ace.getSuit();
+        assertEquals("The suit should be DIAMONDS", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardDiamondsKing(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card king = deck.dsDeck.get(78);
+        int expectedRank = 13;
+        int actualRank = king.getRank();
+        assertEquals("The rank should be 13", expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.DIAMONDS;
+        Suit actualSuit = king.getSuit();
+        assertEquals("The suit should be DIAMONDS", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardHeartsAce(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card ace = deck.dsDeck.get(79);
+        int expectedRank = 1;
+        int actualRank = ace.getRank();
+        assertEquals("The rank should be 1", expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.HEARTS;
+        Suit actualSuit = ace.getSuit();
+        assertEquals("The suit should be HEARTS", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardHeartsKing(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card king = deck.dsDeck.get(91);
+        int expectedRank = 13;
+        int actualRank = king.getRank();
+        assertEquals("The rank should be 13", expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.HEARTS;
+        Suit actualSuit = king.getSuit();
+        assertEquals("The suit should be HEARTS", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardSpadesAce(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card ace = deck.dsDeck.get(92);
+        int expectedRank = 1;
+        int actualRank = ace.getRank();
+        assertEquals("The rank should be 1" , expectedRank, actualRank);
+
+        Suit expectedSuit = Suit.SPADES;
+        Suit actualSuit = ace.getSuit();
+        assertEquals("The suit should be SPADES", expectedSuit, actualSuit);
+    }
+
+    @Test
+    public void doubleStandardSpadesKing(){
+        Deck deck = new Deck(DeckType.DOUBLESTANDARD);
+        Card king = deck.dsDeck.get(104);
+        int expectedRank = 13;
+        int actualRank = king.getRank();
+        assertEquals("The rank should be 13", expectedRank, actualRank);
 
         Suit expectedSuit = Suit.SPADES;
         Suit actualSuit = king.getSuit();

@@ -8,6 +8,7 @@ public class Deck {
     ArrayList<Card> standardDeck;
     ArrayList<Card> hand;
     ArrayList<Card> shuffledDeck;
+    ArrayList<Card> dsDeck;
 
 
 
@@ -29,10 +30,15 @@ public class Deck {
                 shuffleDeck(shuffledDeck);
                 break;
             case DOUBLESTANDARD:
-                for (int i = 0; i <= 12; i++) {shuffledDeck.add(i , new Card(Suit.CLUBS, i + 1));}
-                for (int i = 13; i <= 25; i++) {shuffledDeck.add(i , new Card(Suit.DIAMONDS, i - 12));}
-                for (int i = 26; i <= 38; i++) {shuffledDeck.add(i , new Card(Suit.HEARTS, i - 25));}
-                for (int i = 39; i < 52; i++) {shuffledDeck.add(i , new Card(Suit.SPADES, i - 38));}
+                dsDeck = new ArrayList<Card>();
+                for (int i = 0; i <= 12; i++) {dsDeck.add(i , new Card(Suit.CLUBS, i + 1));}
+                for (int i = 13; i <= 25; i++) {dsDeck.add(i , new Card(Suit.DIAMONDS, i - 12));}
+                for (int i = 26; i <= 38; i++) {dsDeck.add(i , new Card(Suit.HEARTS, i - 25));}
+                for (int i = 39; i <= 52; i++) {dsDeck.add(i , new Card(Suit.SPADES, i - 38));}
+                for (int i = 53; i <= 65; i++) {dsDeck.add(i , new Card(Suit.CLUBS, i - 52));}
+                for (int i = 66; i <= 78; i++) {dsDeck.add(i , new Card(Suit.DIAMONDS, i - 65));}
+                for (int i = 79; i <= 91; i++) {dsDeck.add(i , new Card(Suit.HEARTS, i - 78));}
+                for (int i = 92; i < 105; i++) {dsDeck.add(i , new Card(Suit.SPADES, i - 91));}
                 break;
             case HAND:
                 hand = new ArrayList<Card>();

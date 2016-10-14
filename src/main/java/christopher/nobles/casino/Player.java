@@ -4,7 +4,7 @@ public class Player {
     double balance;
     String name;
 
-    Card hand; //TODO ask about this!
+    Card hand; //TODO ask about this! -EDIT: Resolved
     CasinoEngine casinoEngine = new CasinoEngine();
 
     Player(String startName, double startBalance) {
