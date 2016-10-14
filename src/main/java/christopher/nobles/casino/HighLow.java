@@ -30,6 +30,7 @@ public class HighLow extends CardGame {
     }
 
     public void runGameAgain(){
+        Display.timeStamp();
         belowPlayerBalance();
         discard(currentHand.hand, 0);
         deal(1, dealerShuffled.shuffledDeck, currentHand.hand);
