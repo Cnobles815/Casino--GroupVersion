@@ -169,5 +169,19 @@ public class Display {
                 "\nPlease choose a different way to give away your money.");
     }
 
+    static void renderWarWelcome(){
+        printLn("Welcome to War." +
+                "\nThis isn't even a casino game." +
+                "\nBut you can lose. And you.");
+    }
+
+    static void warLoss(){
+        //printLn("")
+    }
+
+    static void warWin(){
+        
+    }
+
 
 }
