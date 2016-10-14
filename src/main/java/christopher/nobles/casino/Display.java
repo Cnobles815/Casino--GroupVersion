@@ -8,11 +8,11 @@ public class Display {
     static Date date = new Date();
 
     static void renderWelcome(){
-        print("        \nWelcome to to Nobles Casino! \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
+        printLn("        \nWelcome to to Nobles Casino! \nYou're here because you don't like your money very much. \nFortunately for you, Nobles Casino is ready and willing to take it from you!");
     }
 
     static void renderMainMenu(){
-        print("     \n|     [[MAIN MENU]]" +
+        printLn("     \n|     [[MAIN MENU]]" +
                 " \n| [1] - Create Account" +
                 " \n| [2] - Existing Player" +
                 " \n| [3] - Games Menu" +
@@ -20,25 +20,32 @@ public class Display {
                 " \n| [5] - Exit(No Refunds)");
     }
 
-    static public void dealerHand(){
-        print("");
+    static public void dealerHand(ArrayList<Card> arrayList){
+        printLn("Dealer's current card.");
+        printLn(valueOf(arrayList.get(0)));
     }
 
     static void playerHand(ArrayList<Card> arrayList){
-        print(valueOf(arrayList));
+        printLn("Your current hand.");
+        printLn(valueOf(arrayList));
     }
 
     static void timeStamp() {
-        print(String.format((char)27 + "[34;1m%76s",date.toString()));
-        print((char)27 + "[0m");
+        printLn(String.format((char)27 + "[34;1m%76s",date.toString()));
+        printLn((char)27 + "[0m");
     }
     
     static void renderSlotsWelcome(){
-        print("Is it random? Is it rigged? You don't care. Pull the lever.");
+        printLn("Is it random? Is it rigged? You don't care. Pull the lever.");
+    }
+
+    static String printLn(String output) {
+        System.out.println(output);
+        return output;
     }
 
     static String print(String output) {
-        System.out.println(output);
+        System.out.print(output);
         return output;
     }
 
@@ -53,23 +60,23 @@ public class Display {
 
     static void renderGamesMenu(){
         timeStamp();
-        print("\nWe have quite a few ways for you to lose money here. Pick one." +
+        printLn("\nWe have quite a few ways for you to lose money here. Pick one." +
                 " \n|     [[GAMES MENU]]" +
                 " \n| [1] - Slots(Basic)" +
                 " \n| [2] - Blackjack" +
-                " \n| [3] - Crazy8" +
+                " \n| [3] - HighLow" +
                 " \n| [4] - Return to Main Menu");
     }
 
     void renderNoAccountAlert(){
-            print("Now you know you don't have an account big fella." +
+            printLn("Now you know you don't have an account big fella." +
                 "\nNobody calls you X big fella." +
                 "\nThe streets don't call you anything but late big fella." +
                 "\nMake an account! Make an account.");
     }
 
     void renderAccountCreationPrompt(){
-        print("You might as well say your name is 'Charity'." +
+        printLn("You might as well say your name is 'Charity'." +
                 "\nAnd how much do you want in your wallet to start?" +
                 "\nDon't try and tell me you're gonna drop over a grand in here." +
                 "\nDon't do that big fella. Don't get me started on you big fella." +
@@ -77,7 +84,7 @@ public class Display {
     }
 
     static void renderBringItDownAlert(){
-        print("Woah there big fella." +
+        printLn("Woah there big fella." +
                 "\nYou know you can't afford that much big fella." +
                 "\nBring it down under 1k big fella." +
                 "\nYou know you borrowed that money big fella." +
@@ -87,7 +94,7 @@ public class Display {
     }
 
     static void renderExistingAccountAlert(){
-        print("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
+        printLn("YOU ALREADY HAVE AN ACCOUNT BIG FELLA." +
                 "\nWe got your name big fella don't try this." +
                 "\nDon't try this. Just go on home big fella." +
                 "\nYou don't need two accounts big fella." +
@@ -95,13 +102,61 @@ public class Display {
     }
 
     static void renderNoMoneyAlert(){
-        print("YOU RAN OUT OF MONEY! GET OUT!");
+        printLn("YOU RAN OUT OF MONEY! GET OUT!");
     }
 
     static void renderBlackJackStart() {
-        print("Take a seat at the table. Look closely at this table." +
+        printLn("Take a seat at the table. Look closely at this table." +
                 "\nVery soon, you won't be able to afford this table." +
                 "\nPLACE YOUR BET!");
+    }
+
+    static void renderWagerPrompt(){
+        printLn("How much are you willing to lose right now?" +
+                "\nI'll let you choose this time.");
+    }
+
+    static void renderHighLowWelcome(){
+        printLn("This game is simple." +
+                "\nYou still won't win. So lets make this interesting somehow." +
+                "\nThis time, you can decide how much you lose every time you give away money.");
+    }
+
+    static void renderHighLowBetPrompt(){
+        printLn("How much are you willing to waste?");
+    }
+
+    static void highLowWin(){
+        printLn("You guessed correctly." +
+                "\nBut you still only guessed.");
+    }
+
+    static void playerBalance(){
+        printLn("Your current balance is: ");
+        printDbl(PlayerCollection.playerList.get(0).getBalance());
+    }
+
+    static void highLowLoss(){
+        printLn("Hah. You lost." +
+                "\n HAH!");
+    }
+
+    static void singleNewLine(){
+        printLn("\n");
+    }
+
+    static void doubleNewLine(){
+        printLn("\n\n");
+    }
+
+    static void trippleNewLine(){
+        printLn("\n\n\n");
+    }
+
+    static void renderPlayAgainPrompt(){
+        printLn("Do you want to try again?" +
+                "\n[1] - Play Again" +
+                "\n[2] - Back to Main Menu");
     }
 
 

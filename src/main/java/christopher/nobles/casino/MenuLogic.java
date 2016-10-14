@@ -5,6 +5,7 @@ import static christopher.nobles.casino.UserInput.*;
 public class MenuLogic {
     BlackJack blackJack = new BlackJack();
     BasicSlots slots = new BasicSlots();
+    HighLow highLow = new HighLow();
 
     public void mainMenuLogic(int choice){
         CasinoEngine casinoEngine = new CasinoEngine();
@@ -49,6 +50,7 @@ public class MenuLogic {
                 blackJack.runGame();
                 break;
             case 3:
+                highLow.runGame();
                 break;
             case 4:
                 casinoEngine.recursiveMenu();

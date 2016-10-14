@@ -8,6 +8,7 @@ public class UserInput {
     static String strIn = "";
     static int intIn = 0;
     static double doubleIn = 0.0;
+    static short shortIn = 0;
 
     static public String getUserInputStr(){
         strIn = userInput.next();
@@ -22,5 +23,10 @@ public class UserInput {
     static public double getUserInputDbl(){
         doubleIn = userInput.nextDouble();
         return doubleIn;
+    }
+
+    static public short getUserInputShort(){
+        shortIn = userInput.nextShort();
+        return shortIn;
     }
 }

@@ -8,7 +8,7 @@ public class BasicSlots extends SlotsGame {
 
     @Override
     public void runGame(){
-        Display.print("Welcome to the slot machine. \nOut of all of the ways to give away your money... \nThis is the least interesting. Pulling the lever.");
+        Display.printLn("Welcome to the slot machine. \nOut of all of the ways to give away your money... \nThis is the least interesting. Pulling the lever.");
         pull();
     }
 
@@ -19,7 +19,7 @@ public class BasicSlots extends SlotsGame {
           setCenter(getColumn2());
           setRight(getColumn3());
         Display.timeStamp();
-        Display.print("\n\n" + left + "||" + center + "||" + right);
+        Display.printLn("\n\n" + left + "||" + center + "||" + right);
         compare(left, center, right);
         return left + " " + center + " " + right;
     }
@@ -27,13 +27,13 @@ public class BasicSlots extends SlotsGame {
     public void compare(int left, int center, int right){
         CasinoEngine casinoEngine = new CasinoEngine();
         if (left == right && right == center){
-            Display.print("Cha-ching!");
+            Display.printLn("Cha-ching!");
             PlayerCollection.playerList.get(0).changeBalance(10);
             pull();}
-            else {Display.print("You suck.");
+            else {Display.printLn("You suck.");
                 Display.printDbl(PlayerCollection.playerList.get(0).getBalance());
-                Display.print("Give us more money?");
-                Display.print("| [1] - Yes\n| [2] - No");
+                Display.printLn("Give us more money?");
+                Display.printLn("| [1] - Yes\n| [2] - No");
                 choice = UserInput.getUserInputInt();
                     if (choice == 1){
                         belowPlayerBalance();
