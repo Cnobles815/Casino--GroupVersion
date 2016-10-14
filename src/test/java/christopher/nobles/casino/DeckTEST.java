@@ -33,8 +33,6 @@ public class DeckTEST {
     @Test
     public void standardClubAceTest(){
         Deck deck = new Deck(DeckType.STANDARD);
-        //first - Ace of Clubs
-        //last - King of Spades
         Card ace = deck.standardDeck.get(0);
         int expectedRank = 1;
         int actualRank = ace.getRank();

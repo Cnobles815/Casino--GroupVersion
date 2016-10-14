@@ -70,6 +70,7 @@ public class HighLow extends CardGame {
         boolean winLoss;
         if ((currentHand.hand.get(0).getRank()) <= ((dealerShuffled.shuffledDeck.get(0).getRank())))
         {
+            int count = 0;
             winLoss = true;
             PlayerCollection.playerList.get(0).changeBalance(playerWager);
             Display.highLowWin();
@@ -91,6 +92,7 @@ public class HighLow extends CardGame {
 
         switch (choice){
             case 1:
+                int count = 0;
                 runGameAgain();
                 break;
             case 2:
